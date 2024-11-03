@@ -1,5 +1,7 @@
 package ru.otus.java.basic.homeworks.homework4;
 
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
         User user1 = new User("Иванов", "Иванов", "Иванович", 1955, "ivanov@yandex.ru");
@@ -15,8 +17,10 @@ public class Main {
 
         User[] users = {user1, user2, user3, user4, user5, user6, user7, user8, user9, user10};
 
+        int currentYear = LocalDate.now().getYear();
+
         for(User user: users) {
-            if(2024 - user.getBirthYear() > 40) {
+            if(currentYear - user.getBirthYear() > 40) {
                 user.userInfo();
                 System.out.println();
             }

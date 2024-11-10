@@ -7,6 +7,7 @@ public class Cat extends Animal {
         this.endurancePerMeterOfRun = 1;
     }
 
+    @Override
     public float swim(int distance) {
         System.out.println("Коты плавать не умеют");
         return -1;

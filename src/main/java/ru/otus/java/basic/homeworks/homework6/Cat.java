@@ -12,7 +12,7 @@ public class Cat {
     }
 
     public void eat(Plate plate) {
-        if(plate.decreaseFood(appetite)) {
+        if (plate.decreaseFood(appetite)) {
             isHappy = true;
             System.out.println("Кушает кот " + name);
         } else {

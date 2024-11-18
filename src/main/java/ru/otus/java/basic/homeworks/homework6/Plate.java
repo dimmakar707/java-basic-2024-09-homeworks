@@ -1,8 +1,16 @@
 package ru.otus.java.basic.homeworks.homework6;
 
 public class Plate {
-    int maxCapacity;
-    int currentCapacity;
+    private int maxCapacity;
+    private int currentCapacity;
+
+    public int getMaxCapacity() {
+        return maxCapacity;
+    }
+
+    public int getCurrentCapacity() {
+        return currentCapacity;
+    }
 
     public Plate(int maxCapacity) {
         System.out.println("Создана тарелка с количеством еды " + maxCapacity);
@@ -11,12 +19,18 @@ public class Plate {
     }
 
     public void addFood(int quantity) {
-        System.out.println("Кладем еду в тарелку");
-        currentCapacity = Math.min(currentCapacity + quantity, maxCapacity);
+        if (quantity > 0) {
+            System.out.println("Кладем еду в тарелку");
+            if (currentCapacity + quantity > maxCapacity) {
+                currentCapacity = maxCapacity;
+            } else {
+                currentCapacity += quantity;
+            }
+        }
     }
 
     public boolean decreaseFood(int quantity) {
-        if (currentCapacity <= quantity) {
+        if (currentCapacity < quantity || quantity < 0) {
             return false;
         }
         currentCapacity = currentCapacity - quantity;

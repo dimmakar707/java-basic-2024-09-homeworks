@@ -14,11 +14,11 @@ public class Application {
 
         Plate plate = new Plate(10);
 
-        for(Cat cat : cats) {
+        for (Cat cat : cats) {
             cat.eat(plate);
         }
 
-        for(Cat cat : cats) {
+        for (Cat cat : cats) {
             cat.info();
         }
 
@@ -27,19 +27,19 @@ public class Application {
         System.out.println("-------------------");
 
         //Второй прогон, когда насыпаем еду в тарелку, каждому коту, которому не хватило еды
-        plate.addFood(plate.maxCapacity - plate.currentCapacity);
+        plate.addFood(plate.getMaxCapacity() - plate.getCurrentCapacity());
 
         plate.info();
 
-        for(Cat cat : cats) {
+        for (Cat cat : cats) {
             cat.eat(plate);
-            if(!cat.isHappy) {
-                plate.addFood(plate.maxCapacity - plate.currentCapacity);
+            if (!cat.isHappy) {
+                plate.addFood(plate.getMaxCapacity() - plate.getCurrentCapacity());
                 cat.eat(plate);
             }
         }
 
-        for(Cat cat : cats) {
+        for (Cat cat : cats) {
             cat.info();
         }
 

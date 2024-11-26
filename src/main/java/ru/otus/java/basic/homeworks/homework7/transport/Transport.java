@@ -1,8 +1,9 @@
 package ru.otus.java.basic.homeworks.homework7.transport;
 
 import ru.otus.java.basic.homeworks.homework7.localities.Locality;
+import ru.otus.java.basic.homeworks.homework7.localities.LocalityType;
 
 public interface Transport {
-    public boolean move(Locality locality, int distance);
+    public boolean move(LocalityType locality, int distance);
     public String getType();
 }

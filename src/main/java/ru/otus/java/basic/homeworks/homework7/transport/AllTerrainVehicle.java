@@ -1,6 +1,7 @@
 package ru.otus.java.basic.homeworks.homework7.transport;
 
 import ru.otus.java.basic.homeworks.homework7.localities.Locality;
+import ru.otus.java.basic.homeworks.homework7.localities.LocalityType;
 
 public class AllTerrainVehicle implements Transport {
 
@@ -18,7 +19,7 @@ public class AllTerrainVehicle implements Transport {
         this.fuel = fuel;
     }
 
-    public boolean move(Locality locality, int distance) {
+    public boolean move(LocalityType locality, int distance) {
         if(fuel >= distance) {
             fuel -= distance;
             System.out.println("Вездеход едет по местности: " + locality.getType() + ", дистанцию " + distance + " км");

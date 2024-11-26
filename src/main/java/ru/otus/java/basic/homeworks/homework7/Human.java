@@ -1,12 +1,12 @@
 package ru.otus.java.basic.homeworks.homework7;
 
 import ru.otus.java.basic.homeworks.homework7.localities.Locality;
+import ru.otus.java.basic.homeworks.homework7.localities.LocalityType;
 import ru.otus.java.basic.homeworks.homework7.transport.Transport;
 
 public class Human {
     private String name;
     private Transport currentTransport;
-    private boolean isOnTransport;
     private int power;
 
     public String getName() {
@@ -27,21 +27,23 @@ public class Human {
     }
 
     public void seatOnTransport(Transport transport) {
-        System.out.println(name + " сел в транспорт: " + transport.getType());
-        currentTransport = transport;
-        isOnTransport = true;
+        if(currentTransport == null) {
+            System.out.println(name + " сел в транспорт: " + transport.getType());
+            currentTransport = transport;
+            return;
+        }
+        System.out.println(name + " не может сесть в транспорт " + transport.getType() + ", т.к. он уже в транспорте: " + currentTransport.getType());
     }
 
     public void leaveTransport() {
-        if(isOnTransport) {
+        if(currentTransport != null) {
             System.out.println(name + " вышел из транспорта: " + currentTransport.getType());
             currentTransport = null;
-            isOnTransport = false;
         }
     }
 
-    public boolean go(Locality locality, int distance) {
-        if(isOnTransport) {
+    public boolean go(LocalityType locality, int distance) {
+        if(currentTransport != null) {
             return currentTransport.move(locality, distance);
         }
         if(distance > power) {

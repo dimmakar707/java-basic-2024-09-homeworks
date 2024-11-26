@@ -1,6 +1,5 @@
 package ru.otus.java.basic.homeworks.homework7.transport;
 
-import ru.otus.java.basic.homeworks.homework7.localities.Locality;
 import ru.otus.java.basic.homeworks.homework7.localities.LocalityType;
 
 public class AllTerrainVehicle implements Transport {

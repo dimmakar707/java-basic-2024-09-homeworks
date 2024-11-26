@@ -1,9 +1,6 @@
 package ru.otus.java.basic.homeworks.homework7.transport;
 
-import ru.otus.java.basic.homeworks.homework7.localities.Forest;
-import ru.otus.java.basic.homeworks.homework7.localities.Locality;
 import ru.otus.java.basic.homeworks.homework7.localities.LocalityType;
-import ru.otus.java.basic.homeworks.homework7.localities.Swamp;
 
 import java.util.ArrayList;
 import java.util.List;

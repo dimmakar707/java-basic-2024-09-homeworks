@@ -15,7 +15,6 @@ public class SortArray {
         }
     }
 
-    //Реализован через сортировку слиянием
     public static void quickSort(int[] array) {
         if (array.length < 2) return;
 
@@ -32,7 +31,7 @@ public class SortArray {
     private static void merge(int[] array, int[] leftArray, int[] rightArray) {
         int i = 0, j = 0, k = 0;
 
-        while (i < leftArray.length && j < rightArray.length) { // Пока не пройдены обе половины
+        while (i < leftArray.length && j < rightArray.length) {
             if (leftArray[i] <= rightArray[j]) {
                 array[k++] = leftArray[i++];
             } else {

@@ -15,15 +15,15 @@ public class PersonDataBase {
     }
 
     public boolean isManager(Person person) {
-        switch (person.getPosition()) {
-            case MANAGER:
-            case DIRECTOR:
-            case BRANCH_DIRECTOR:
-            case SENIOR_MANAGER:
-                return true;
-            default:
-                return false;
+        Map<Position, Integer> positions = new HashMap<>();
+        positions.put(Position.MANAGER, 1);
+        positions.put(Position.DIRECTOR, 2);
+        positions.put(Position.BRANCH_DIRECTOR, 3);
+        positions.put(Position.SENIOR_MANAGER, 4);
+        if(positions.get(person.getPosition()) != null) {
+            return true;
         }
+        return false;
     }
 
     public boolean isEmployee(Long id) {

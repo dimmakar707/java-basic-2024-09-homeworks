@@ -16,9 +16,7 @@ public class Application {
             System.out.println("В корневой директории нет текстовых файлов");
         } else {
             System.out.println("В корневой директории содержатся файлы:");
-            for (String fileName : rootFileNames) {
-                System.out.println(fileName);
-            }
+            showFileNames(rootFileNames);
             String choosedFile = chooseFile(rootFileNames, scanner);
             if(choosedFile != null) {
                 getFileContent(choosedFile);
@@ -43,6 +41,12 @@ public class Application {
         return rootFileNames;
     }
 
+    public static void showFileNames(List<String> rootFileNames) {
+        for (String fileName : rootFileNames) {
+            System.out.println(fileName);
+        }
+    }
+
     public static String chooseFile(List<String> rootFileNames, Scanner scanner) {
         if(!rootFileNames.isEmpty()) {
             System.out.println("Введите название файла:");
@@ -58,7 +62,7 @@ public class Application {
 
     public static void getFileContent(String fileName) {
         System.out.println("Содержимое файла " + fileName + ":");
-        try (InputStreamReader in = new InputStreamReader(new FileInputStream(fileName))) {
+        try (InputStreamReader in = new InputStreamReader(new BufferedInputStream(new FileInputStream(fileName)))) {
             int n = in.read();
             while (n != -1) {
                 System.out.print((char) n);

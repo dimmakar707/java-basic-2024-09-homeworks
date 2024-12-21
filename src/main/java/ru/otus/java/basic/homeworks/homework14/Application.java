@@ -2,7 +2,7 @@ package ru.otus.java.basic.homeworks.homework14;
 
 public class Application {
 
-    private final static int NUM_OF_ELEMENTS = 100_000_000;
+    private static final int NUM_OF_ELEMENTS = 100_000_000;
 
     public static void main(String[] args) throws InterruptedException {
         long start = System.currentTimeMillis();
@@ -26,27 +26,22 @@ public class Application {
 
     public static double[] multiThreadingCreateArray() throws InterruptedException {
         double[] array = new double[NUM_OF_ELEMENTS];
-        int quarter = NUM_OF_ELEMENTS / 4;
+        final int quarter = NUM_OF_ELEMENTS / 4;
 
         Thread t1 = new Thread(() -> {
-            for (int i = 0; i < quarter; i++) {
+            /*for (int i = 0; i < quarter; i++) {
                 array[i] = fillElement(i);
-            }
+            }*/
+            fillPartOfArray(array, 0, quarter);
         });
         Thread t2 = new Thread(() -> {
-            for (int i = quarter; i < 2 * quarter; i++) {
-                array[i] = fillElement(i);
-            }
+            fillPartOfArray(array, quarter, 2 * quarter);
         });
         Thread t3 = new Thread(() -> {
-            for (int i = 2 * quarter; i < 3 * quarter; i++) {
-                array[i] = fillElement(i);
-            }
+            fillPartOfArray(array, 2 * quarter, 3 * quarter);
         });
         Thread t4 = new Thread(() -> {
-            for (int i = 3 * quarter; i < array.length; i++) {
-                array[i] = fillElement(i);
-            }
+            fillPartOfArray(array, 3 * quarter, 4 * quarter);
         });
 
         t1.start();
@@ -62,6 +57,12 @@ public class Application {
 
     public static double fillElement(int i) {
         return 1.14 * Math.cos(i) * Math.sin(i * 0.2) * Math.cos(i / 1.2);
+    }
+
+    public static void fillPartOfArray(double[] array, int startIndex, int endIndex) {
+        for (int i = startIndex; i < endIndex; i++) {
+            array[i] = fillElement(i);
+        }
     }
 
 }

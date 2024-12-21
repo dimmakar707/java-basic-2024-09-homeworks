@@ -11,7 +11,6 @@ import java.util.List;
 import static java.lang.Double.parseDouble;
 
 public class Server {
-    private static final List<ClientHandler> clientHandlers = new ArrayList<>();
 
     private static double sum(double operand1, double operand2) {
         return operand1 + operand2;
@@ -37,8 +36,6 @@ public class Server {
             DataInputStream inputStream = new DataInputStream(client.getInputStream());
             DataOutputStream outputStream = new DataOutputStream(client.getOutputStream());
             System.out.println("Клиент с портом: " + client.getPort() + " подключился!");
-            ClientHandler clientHandler = new ClientHandler(client, inputStream, outputStream);
-            clientHandlers.add(clientHandler);
             outputStream.writeUTF("Доступные операции: +, -, *, /. Введите два числа и символ операции или введите exit для выхода");
 
             String userInput = inputStream.readUTF();

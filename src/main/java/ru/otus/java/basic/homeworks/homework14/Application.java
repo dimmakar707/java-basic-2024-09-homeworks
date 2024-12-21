@@ -29,9 +29,6 @@ public class Application {
         final int quarter = NUM_OF_ELEMENTS / 4;
 
         Thread t1 = new Thread(() -> {
-            /*for (int i = 0; i < quarter; i++) {
-                array[i] = fillElement(i);
-            }*/
             fillPartOfArray(array, 0, quarter);
         });
         Thread t2 = new Thread(() -> {

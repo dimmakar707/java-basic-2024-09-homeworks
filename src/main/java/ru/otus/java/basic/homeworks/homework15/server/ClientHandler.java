@@ -29,7 +29,6 @@ public class ClientHandler {
 
                 while(true) {
                     String message = in.readUTF();
-                    //Тут код для дз String[] strings = message.split(" ", 3);
                     if(message.startsWith("/w")) {
                         String[] strings = message.split(" ", 3);
                         String username = strings[1];

@@ -1,7 +1,7 @@
-package ru.otus.java.basic.homeworks.homework19;
+package ru.otus.java.basic.homeworks.homework19.fruits;
 
 public class Fruit {
-    private double weight;
+    protected double weight;
 
     public Fruit(double weight) {
         this.weight = weight;

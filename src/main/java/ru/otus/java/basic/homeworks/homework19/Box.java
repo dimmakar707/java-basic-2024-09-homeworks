@@ -1,5 +1,7 @@
 package ru.otus.java.basic.homeworks.homework19;
 
+import ru.otus.java.basic.homeworks.homework19.fruits.Fruit;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

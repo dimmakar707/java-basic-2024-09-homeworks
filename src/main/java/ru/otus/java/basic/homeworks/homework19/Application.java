@@ -1,5 +1,9 @@
 package ru.otus.java.basic.homeworks.homework19;
 
+import ru.otus.java.basic.homeworks.homework19.fruits.Apple;
+import ru.otus.java.basic.homeworks.homework19.fruits.Fruit;
+import ru.otus.java.basic.homeworks.homework19.fruits.Orange;
+
 public class Application {
     public static void main(String[] args) {
         Apple apple1 = new Apple(0.1);

@@ -26,7 +26,7 @@ public class Application {
                     for (int i = 0; i < 5; i++) {
                         app.printLetter("A");
                         app.setLetter("A");
-                        while (app.letter != "C") {
+                        while (!app.letter.equals("C")) {
                             app.wait();
                         }
                         app.notifyAll();
@@ -40,7 +40,7 @@ public class Application {
             synchronized (app) {
                 try {
                     for (int i = 0; i < 5; i++) {
-                        while (app.letter != "A") {
+                        while (!app.letter.equals("A")) {
                             app.wait();
                         }
                         app.printLetter("B");
@@ -56,7 +56,7 @@ public class Application {
             synchronized (app) {
                 try {
                     for (int i = 0; i < 5; i++) {
-                        while (app.letter != "B") {
+                        while (!app.letter.equals("B")) {
                             app.wait();
                         }
                         app.printLetter("C");

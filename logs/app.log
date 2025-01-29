@@ -1,0 +1,12 @@
+2025-01-28 23:04:50 ERROR Application:22 - Ошибка! Исключение RuntimeException в методе returnArrayAfterOne
+2025-01-28 23:04:50 ERROR Application:22 - Ошибка! Исключение RuntimeException в методе returnArrayAfterOne
+2025-01-28 23:04:50 INFO  Application:27 - Мы расчитали результат = [4, 8, 9]
+2025-01-28 23:04:50 INFO  Application:27 - Мы расчитали результат = [3, 2, 5]
+2025-01-28 23:04:50 INFO  Application:27 - Мы расчитали результат = [4, 8, 9]
+2025-01-28 23:04:50 INFO  Application:27 - Мы расчитали результат = [3, 2, 5]
+2025-01-28 23:04:50 INFO  Application:27 - Мы расчитали результат = [7, 3, 4, 8, 9]
+2025-01-28 23:04:50 INFO  Application:27 - Мы расчитали результат = []
+2025-01-28 23:04:50 INFO  Application:47 - Мы расчитали результат = false
+2025-01-28 23:04:50 INFO  Application:47 - Мы расчитали результат = false
+2025-01-28 23:04:50 INFO  Application:47 - Мы расчитали результат = true
+2025-01-28 23:04:50 INFO  Application:47 - Мы расчитали результат = true

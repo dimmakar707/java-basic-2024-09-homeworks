@@ -21,21 +21,21 @@ public class HttpServer {
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             System.out.println("Сервер запущен на порту: " + port);
 
-            try (Socket socket = serverSocket.accept()) {
-                while(true) {
-                    executor.execute(()-> {
-                        try {
-                            System.out.println("Подключился новый клиент");
-                            byte[] buffer = new byte[8192];
-                            int n = socket.getInputStream().read(buffer);
-                            HttpRequest request = new HttpRequest(new String(buffer, 0, n));
-                            request.info(true);
-                            dispatcher.execute(request, socket.getOutputStream());
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    });
-                }
+            while(true) {
+                Socket socket = serverSocket.accept();
+                executor.execute(() -> {
+                    try {
+                        System.out.println("Подключился новый клиент");
+                        byte[] buffer = new byte[8192];
+                        int n = socket.getInputStream().read(buffer);
+                        HttpRequest request = new HttpRequest(new String(buffer, 0, n));
+                        request.info(true);
+                        dispatcher.execute(request, socket.getOutputStream());
+                        socket.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                });
             }
 
         } catch (IOException e) {

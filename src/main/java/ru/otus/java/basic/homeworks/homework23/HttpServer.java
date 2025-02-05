@@ -31,9 +31,15 @@ public class HttpServer {
                         HttpRequest request = new HttpRequest(new String(buffer, 0, n));
                         request.info(true);
                         dispatcher.execute(request, socket.getOutputStream());
-                        socket.close();
+
                     } catch (IOException e) {
                         e.printStackTrace();
+                    } finally {
+                        try {
+                            socket.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 });
             }

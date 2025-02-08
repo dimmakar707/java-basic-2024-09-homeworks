@@ -1,0 +1,210 @@
+2025-02-08 08:59:32 INFO  HttpServer:22 - Сервер запущен на порту: 8189
+2025-02-08 08:59:44 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 08:59:44 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 08:59:45 INFO  HttpRequest:82 - METHOD: GET
+2025-02-08 08:59:45 INFO  HttpRequest:83 - URI: /products
+2025-02-08 08:59:45 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=96cb16d8-8440-4359-b35f-2947a91cd992, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 08:59:45 INFO  HttpRequest:85 - BODY: {
+    "id": 1,
+    "title": "Banana"
+}
+2025-02-08 09:00:01 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:00:01 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:00:01 INFO  HttpRequest:82 - METHOD: PUT
+2025-02-08 09:00:01 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:00:01 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=de81ae92-0ab5-47e9-b0e7-540e1ef375c3, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:00:01 INFO  HttpRequest:85 - BODY: {
+    "id": 1,
+    "title": "Banana"
+}
+2025-02-08 09:00:01 INFO  HttpServer:46 - Индекс обновляемого элемента: -1
+2025-02-08 09:04:17 INFO  HttpServer:22 - Сервер запущен на порту: 8189
+2025-02-08 09:40:41 INFO  HttpServer:22 - Сервер запущен на порту: 8189
+2025-02-08 09:40:53 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:40:53 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:40:53 INFO  HttpRequest:82 - METHOD: GET
+2025-02-08 09:40:53 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:40:53 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=b4825798-80ae-4cb5-a1f1-8233b893525b, Host=localhost:8189, Accept-Encoding=gzip, deflate, br}
+2025-02-08 09:40:53 INFO  HttpRequest:85 - BODY: 
+2025-02-08 09:41:06 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:41:06 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:41:06 INFO  HttpRequest:82 - METHOD: PUT
+2025-02-08 09:41:06 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:41:06 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=aed2643e-9f8f-4d2e-ac76-802e7282f667, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:41:06 INFO  HttpRequest:85 - BODY: {
+    "id": 1,
+    "title": "Banana"
+}
+2025-02-08 09:41:12 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:41:12 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:41:12 INFO  HttpRequest:82 - METHOD: GET
+2025-02-08 09:41:12 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:41:12 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=8f156f3a-a492-4584-a6ba-26ca9d8663e4, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:41:12 INFO  HttpRequest:85 - BODY: {
+    "id": 1,
+    "title": "Banana"
+}
+2025-02-08 09:41:24 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:41:24 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:41:24 INFO  HttpRequest:82 - METHOD: PUT
+2025-02-08 09:41:24 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:41:24 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=71aaafa7-6a29-4d37-b79e-522fbad21cdf, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:41:24 INFO  HttpRequest:85 - BODY: {
+    "id": 4,
+    "title": "Banana"
+}
+2025-02-08 09:44:33 INFO  HttpServer:22 - Сервер запущен на порту: 8189
+2025-02-08 09:44:46 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:44:46 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:44:46 INFO  HttpRequest:82 - METHOD: GET
+2025-02-08 09:44:46 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:44:46 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=518e58f5-64de-4021-9c7e-3b946206d1b7, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:44:46 INFO  HttpRequest:85 - BODY: {
+    "id": 4,
+    "title": "Banana"
+}
+2025-02-08 09:45:09 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:45:09 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:45:09 INFO  HttpRequest:82 - METHOD: DELETE
+2025-02-08 09:45:09 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:45:09 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=fc482986-e45b-4319-af47-01baa9e068cd, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:45:09 INFO  HttpRequest:85 - BODY: {
+    "id": 4,
+    "title": "Banana"
+}
+2025-02-08 09:45:18 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:45:18 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:45:18 INFO  HttpRequest:82 - METHOD: GET
+2025-02-08 09:45:18 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:45:18 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=76f712b5-8648-45e2-a678-9e2b8efff1b8, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:45:18 INFO  HttpRequest:85 - BODY: {
+    "id": 4,
+    "title": "Banana"
+}
+2025-02-08 09:45:30 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:45:30 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:45:30 INFO  HttpRequest:82 - METHOD: DELETE
+2025-02-08 09:45:30 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:45:30 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=b4bc1895-7507-4df9-ad7e-018dee627b69, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:45:30 INFO  HttpRequest:85 - BODY: {
+    "id": 4,
+    "title": "Banana"
+}
+2025-02-08 09:45:44 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:45:44 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:45:44 INFO  HttpRequest:82 - METHOD: GET
+2025-02-08 09:45:44 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:45:44 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=cc2c33d8-f47f-40fc-8a57-9f9fb879596d, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:45:44 INFO  HttpRequest:85 - BODY: {
+    "id": 4,
+    "title": "Banana"
+}
+2025-02-08 09:46:00 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:46:00 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:46:00 INFO  HttpRequest:82 - METHOD: PUT
+2025-02-08 09:46:00 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:46:00 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=bd856750-f2bb-4b55-a28c-a83f490e034a, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:46:00 INFO  HttpRequest:85 - BODY: {
+    "id": 4,
+    "title": "Banana"
+}
+2025-02-08 09:46:09 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:46:09 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:46:09 INFO  HttpRequest:82 - METHOD: PUT
+2025-02-08 09:46:09 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:46:09 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=59a01eb8-665b-42b9-97b9-0c55a0f3c4de, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:46:09 INFO  HttpRequest:85 - BODY: {
+    "id": 3,
+    "title": "Banana"
+}
+2025-02-08 09:46:14 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:46:14 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:46:14 INFO  HttpRequest:82 - METHOD: GET
+2025-02-08 09:46:14 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:46:14 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=b7e6e411-b1ad-496c-85fd-199da00303a7, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:46:14 INFO  HttpRequest:85 - BODY: {
+    "id": 3,
+    "title": "Banana"
+}
+2025-02-08 09:49:37 INFO  HttpServer:22 - Сервер запущен на порту: 8189
+2025-02-08 09:49:43 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:49:43 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:49:43 INFO  HttpRequest:82 - METHOD: GET
+2025-02-08 09:49:43 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:49:43 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=849d99e4-a9e6-4e69-8054-ff0eaf6bd5f7, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:49:43 INFO  HttpRequest:85 - BODY: {
+    "id": 3,
+    "title": "Banana"
+}
+2025-02-08 09:50:00 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:00 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:00 INFO  HttpRequest:82 - METHOD: PUT
+2025-02-08 09:50:00 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:50:00 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=e6cc358a-9ed0-4f20-b3c7-89bf8a47d56f, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:50:00 INFO  HttpRequest:85 - BODY: {
+    "id": 4,
+    "title": "Banana"
+}
+2025-02-08 09:50:09 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:09 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:09 INFO  HttpRequest:82 - METHOD: PUT
+2025-02-08 09:50:09 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:50:09 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=88b58cbe-25b0-40c3-a0d0-c7dfe8b48ab9, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:50:09 INFO  HttpRequest:85 - BODY: {
+    "id": 3,
+    "title": "Banana"
+}
+2025-02-08 09:50:14 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:14 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:14 INFO  HttpRequest:82 - METHOD: GET
+2025-02-08 09:50:14 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:50:14 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=4fff71c0-e0ae-461b-a531-e39f1124b233, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:50:14 INFO  HttpRequest:85 - BODY: {
+    "id": 3,
+    "title": "Banana"
+}
+2025-02-08 09:50:28 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:28 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:28 INFO  HttpRequest:82 - METHOD: DELETE
+2025-02-08 09:50:28 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:50:28 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=052e2806-a0b3-4fca-ac59-b1f4e9a07dd5, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:50:28 INFO  HttpRequest:85 - BODY: {
+    "id": 3,
+    "title": "Banana"
+}
+2025-02-08 09:50:36 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:36 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:36 INFO  HttpRequest:82 - METHOD: DELETE
+2025-02-08 09:50:36 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:50:36 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=1b3c9354-3cc0-4a2f-85c5-315e769a72f9, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:50:36 INFO  HttpRequest:85 - BODY: {
+    "id": 3,
+    "title": "Banana"
+}
+2025-02-08 09:50:43 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:43 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:43 INFO  HttpRequest:82 - METHOD: GET
+2025-02-08 09:50:43 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:50:43 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=e9261879-79c6-4e99-90f2-9fc653ebd0a8, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:50:43 INFO  HttpRequest:85 - BODY: {
+    "id": 3,
+    "title": "Banana"
+}
+2025-02-08 09:50:50 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:50 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:50 INFO  HttpRequest:82 - METHOD: DELETE
+2025-02-08 09:50:50 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:50:50 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=081a26d4-dd7d-47fe-8677-63a544d64be3, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:50:50 INFO  HttpRequest:85 - BODY: {
+    "id": 3,
+    "title": "Banana"
+}
+2025-02-08 09:50:55 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:55 INFO  HttpServer:25 - Подключился новый клиент
+2025-02-08 09:50:55 INFO  HttpRequest:82 - METHOD: GET
+2025-02-08 09:50:55 INFO  HttpRequest:83 - URI: /products
+2025-02-08 09:50:55 INFO  HttpRequest:84 - HEADERS: {Accept=*/*, User-Agent=PostmanRuntime/7.43.0, Connection=keep-alive, Postman-Token=097cc1df-3fc7-43bf-a2a0-9df34183105b, Host=localhost:8189, Accept-Encoding=gzip, deflate, br, Content-Length=41, Content-Type=application/json}
+2025-02-08 09:50:55 INFO  HttpRequest:85 - BODY: {
+    "id": 3,
+    "title": "Banana"
+}

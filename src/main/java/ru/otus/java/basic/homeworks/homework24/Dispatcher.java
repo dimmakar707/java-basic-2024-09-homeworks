@@ -39,11 +39,11 @@ public class Dispatcher {
             }
             router.get(request.getRoutingKey()).execute(request, output);
         } catch (BadRequestException e) {
-            LOGGER.debug("Исключение BadRequestException в файле Dispatcher");
+            LOGGER.warn("Исключение BadRequestException в классе Dispatcher");
             request.setErrorCause(e);
             default400Processor.execute(request, output);
         } catch (Exception e) {
-            e.printStackTrace();
+            LOGGER.error("Исключение в классе Dispatcher: {}", e.getMessage());
             default500Processor.execute(request, output);
         }
     }

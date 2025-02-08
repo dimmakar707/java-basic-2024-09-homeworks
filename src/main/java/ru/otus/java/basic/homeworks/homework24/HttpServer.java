@@ -34,8 +34,7 @@ public class HttpServer {
                 }
             }
         } catch (IOException e) {
-            LOGGER.debug("Исключение IOException в классе HttpServer");
-            e.printStackTrace();
+            LOGGER.error("Исключение IOException в классе HttpServer: {}", e.getMessage());
         }
     }
 }

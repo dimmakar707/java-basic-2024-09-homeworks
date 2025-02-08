@@ -6,13 +6,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.IntStream;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import ru.otus.java.basic.homeworks.homework24.HttpServer;
-
 
 public class ProductsService {
-    private static final Logger LOGGER = LogManager.getLogger(HttpServer.class);
     private List<Product> products;
 
     public ProductsService() {

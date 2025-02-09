@@ -43,7 +43,7 @@ public class Dispatcher {
             request.setErrorCause(e);
             default400Processor.execute(request, output);
         } catch (Exception e) {
-            LOGGER.error("Исключение в классе Dispatcher: {}", e.getMessage());
+            LOGGER.error("Исключение в классе Dispatcher:", e);
             default500Processor.execute(request, output);
         }
     }

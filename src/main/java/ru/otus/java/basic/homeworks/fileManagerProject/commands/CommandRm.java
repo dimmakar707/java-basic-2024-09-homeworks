@@ -5,11 +5,14 @@ import ru.otus.java.basic.homeworks.fileManagerProject.service.ServiceFunctions;
 import java.io.IOException;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import static ru.otus.java.basic.homeworks.fileManagerProject.service.ServiceFunctions.SYSTEM_PATH_SEPARATOR;
 
 public class CommandRm implements Command {
     ServiceFunctions serviceFunctions;
+    private static final Logger LOGGER = LogManager.getLogger(CommandRm.class);
 
     public CommandRm(ServiceFunctions serviceFunctions) {
         this.serviceFunctions = serviceFunctions;
@@ -60,7 +63,8 @@ public class CommandRm implements Command {
             Files.delete(filePath);
             System.out.println(filePath + " удален");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Не удалось удалить файл");
+            LOGGER.error("Исключение в классе CommandRm:", e);
         }
 
         return currentLocation;

@@ -11,8 +11,12 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class ServiceFunctions {
     public static final String SYSTEM_PATH_SEPARATOR = File.separator;
+    private static final Logger LOGGER = LogManager.getLogger(ServiceFunctions.class);
 
     public void printFileInfo(Path filePath) {
         ZoneId zoneId = ZoneId.systemDefault();
@@ -26,7 +30,8 @@ public class ServiceFunctions {
             String formattedDateTime = zdt.format(formatter);
             System.out.printf("%-10s | %-13s | %-19s | %s", type, sizeInBytes, formattedDateTime, filePath.getFileName());
         } catch (IOException e) {
-            System.out.println("Не удалось получить атрибуты директории/файла");
+            System.out.println("Не удалось удалить файл");
+            LOGGER.error("Исключение в классе ServiceFunctions:", e);
         }
 
     }
@@ -35,20 +40,23 @@ public class ServiceFunctions {
         return Files.isDirectory(path);
     }
 
-    public boolean isEmpty(Path path) throws IOException {
+    public boolean isEmpty(Path path) {
         if (Files.isDirectory(path)) {
             try (DirectoryStream<Path> stream = Files.newDirectoryStream(path)) {
                 if (stream.iterator().hasNext()) {
                     return false;
                 }
                 return true;
+            } catch (IOException e) {
+                LOGGER.error("Исключение в методе isEmpty класса ServiceFunctions:", e);
+                return false;
             }
         }
         return true;
     }
 
     public String changePathSeparator(String path) {
-        if(SYSTEM_PATH_SEPARATOR.equals("/")) {
+        if (SYSTEM_PATH_SEPARATOR.equals("/")) {
             path = path.replace("\\", SYSTEM_PATH_SEPARATOR);
         } else {
             path = path.replace("/", SYSTEM_PATH_SEPARATOR);

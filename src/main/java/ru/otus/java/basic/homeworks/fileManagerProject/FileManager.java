@@ -8,6 +8,9 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class FileManager {
     private Scanner scanner;
     private String currentLocation;
@@ -21,6 +24,7 @@ public class FileManager {
     Command commandFinfo;
     Command commandHelp;
     Command commandFind;
+    private static final Logger LOGGER = LogManager.getLogger(FileManager.class);
 
     public FileManager(String currentLocation) throws IOException {
         serviceFunctions = new ServiceFunctions();
@@ -50,7 +54,8 @@ public class FileManager {
             }
             System.out.println("Благодарим вас за использование нашего \"прекрасного\" продукта.");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Ошибка инициализации менеджера");
+            LOGGER.error(e);
         } finally {
             scanner.close();
         }

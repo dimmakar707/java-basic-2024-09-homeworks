@@ -7,9 +7,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class CommandMv implements Command {
     ServiceFunctions serviceFunctions;
+    private static final Logger LOGGER = LogManager.getLogger(CommandMv.class);
 
     public CommandMv(ServiceFunctions serviceFunctions) {
         this.serviceFunctions = serviceFunctions;
@@ -38,7 +41,8 @@ public class CommandMv implements Command {
         try {
             Files.move(from, to, StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Не удалось перенести файл");
+            LOGGER.error("Исключение в классе CommandMv:", e);
         }
 
         return currentLocation;

@@ -7,9 +7,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class CommandCp implements Command {
     ServiceFunctions serviceFunctions;
+    private static final Logger LOGGER = LogManager.getLogger(CommandCp.class);
 
     public CommandCp(ServiceFunctions serviceFunctions) {
         this.serviceFunctions = serviceFunctions;
@@ -38,7 +41,8 @@ public class CommandCp implements Command {
         try {
             Files.copy(from, to, StandardCopyOption.REPLACE_EXISTING);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Не удалось скопировать файл");
+            LOGGER.error("Исключение в классе CommandCp:", e);
         }
 
         return currentLocation;

@@ -40,6 +40,7 @@ public class CommandMv implements Command {
 
         try {
             Files.move(from, to, StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("Файл перемещён");
         } catch (IOException e) {
             System.out.println("Не удалось перенести файл");
             LOGGER.error("Исключение в классе CommandMv:", e);

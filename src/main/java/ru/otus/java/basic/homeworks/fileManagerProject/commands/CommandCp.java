@@ -34,12 +34,13 @@ public class CommandCp implements Command {
         }
 
         if (Files.exists(to) && !isForce) {
-            System.out.println("Указанный файл уже существует в папке назначения. Если вы хотите заменить его введите команду: mv from to -f");
+            System.out.println("Указанный файл уже существует в папке назначения. Если вы хотите заменить его введите команду: cp from to -f");
             return currentLocation;
         }
 
         try {
             Files.copy(from, to, StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("Файл скопирован");
         } catch (IOException e) {
             System.out.println("Не удалось скопировать файл");
             LOGGER.error("Исключение в классе CommandCp:", e);
